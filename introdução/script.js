@@ -1,7 +1,5 @@
-document.getElementById("titulo").innerHTML = "opa tudo bem?";
+var hora = 18;
 
-document.write("olá pedro");
-
-window.alert("teste aqui, ok");
-
-console.log("A menasgem que eu inserir aqui, aparecerá no console do site");
+if(hora == 12 || hora == 18){
+    console.log("Você está na hora do rush");
+}
