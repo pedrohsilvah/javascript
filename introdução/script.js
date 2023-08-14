@@ -1,5 +1,5 @@
-var hora = 18;
+var pessoa = {nome: "Bonieky", sobrenome: "Lacerda"};
 
-if(hora == 12 || hora == 18){
-    console.log("Você está na hora do rush");
-}
+pessoa = "Pedro";
+
+console.log(pessoa);
