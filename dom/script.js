@@ -1,53 +1,9 @@
-function alterar(titulo) {
-     document.getElementById("titulo").innerHTML = titulo
-     document.getElementById("campo").value = titulo
+function trocarImagem(filename, animalname) {
+    document.querySelector('.img').setAttribute('src' , 'img/'+filename);
+    document.querySelector('.img').setAttribute('data-animal', animalname)
 }
 
-function somar(x, y) {
-    let total = x + y
-
-    return total;
+function pegarAnimal() {
+    let animal = document.querySelector('.img').getAttribute('data-animal');
+    alert("O nome do animal é: "+animal)
 }
-
-var resultado = somar(10, 15);
-
-console.log(resultado) 
-
-
-
-
-
-
-
-
-
-
-/*function trocar() {
-    if (document.querySelector('button').classList.contains('preto')) {
-        document.querySelector('button').classList.remove('preto');
-        document.querySelector('button').classList.add('verde');
-    } else {
-        document.querySelector('button').classList.remove('verde');
-        document.querySelector('button').classList.add('preto');
-    }
-} */
-
-
-
-/*function verde() {
-    document.querySelector('#exemplo').classList.remove('vermelho')
-    document.querySelector('#exemplo').classList.remove('azul')
-    document.querySelector("#exemplo").classList.add('verde');
-}
-
-function vermelho() {
-    document.querySelector('#exemplo').classList.remove('azul')
-    document.querySelector('#exemplo').classList.remove('verde')
-    document.querySelector("#exemplo").classList.add('vermelho');
-}
-
-function azul() {
-    document.querySelector('#exemplo').classList.remove('vermelho')
-    document.querySelector('#exemplo').classList.remove('verde')
-    document.querySelector("#exemplo").classList.add('azul');
-} */

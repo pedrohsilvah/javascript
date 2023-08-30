@@ -1,16 +1,8 @@
-#exemplo {
+.texto {
     width: 200px;
     height: 200px;
-    margin: 20px;
-    border: 1px solid black;
-}
-
-.verde {
-    background-color: green;
-    color: black;
-}
-
-.preto {
-    background-color: black;
-    color: white;
+    overflow: auto;
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid red;
 }
