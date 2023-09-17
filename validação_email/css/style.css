@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: helvetica;
     box-sizing: border-box; 
 }
@@ -34,11 +34,22 @@ input, select, textarea {
 
 button {
     padding: 10px;
-/*serve para tirar bordas do botão enviar*/
+--serve para tirar bordas do botão enviar
     border: none;
     border-radius: 5px;
     background-color: #333;
     color: #fff;
     font-size: 1.1rem;
     cursor: pointer;
+} */
+
+button {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    transition: 1s;
 }
