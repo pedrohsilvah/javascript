@@ -37,6 +37,7 @@
 //     return false;
 // }
 
+
 function validarEmail() {
     const emailInput = document.getElementById("email");
     const mensagem = document.getElementById("mensagem");

@@ -38,9 +38,13 @@
 </head>
 <body>
     <h1>Validação de E-mail</h1>
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" id="name">
+    <p id="mensage1"></p>
+    
     <label for="email">Digite seu e-mail:</label>
     <input type="text" id="email">
-    <button onclick="validarEmail()">Enviar</button>
+    <button onclick="validarEmail()" onclick="validarNome()">Enviar</button>
     <p id="mensagem"></p>
 </body>
 </html>

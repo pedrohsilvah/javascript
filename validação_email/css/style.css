@@ -43,6 +43,10 @@ button {
     cursor: pointer;
 } */
 
+label {
+    display: block;
+}
+
 button {
     padding: 3px;
     border-radius: 5px;

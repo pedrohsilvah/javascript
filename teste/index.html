@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de Email e Nome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Validação de e-mail</h1>
+    <form id="myForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <button type="button" onclick="validarForm()">Enviar</button>
+    </form>
+
+    <script>
+        function validarForm() {
+            var nome = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+
+            // Expressão regular para validar o email
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if (nome === "") {
+                alert("Por favor, preencha o campo Nome.");
+            } else if (!email.match(emailPattern)) {
+                alert("Por favor, insira um endereço de email válido. ex: nome@dominio.com");
+            } else {
+                // Se os campos são válidos, você pode enviar os dados aqui
+                // Exemplo: enviarDados(nome, email);
+                alert("Dados válidos. Nome: " + nome + ", Email: " + email);
+            }
+        }
+    </script>
+</body>
+</html>
