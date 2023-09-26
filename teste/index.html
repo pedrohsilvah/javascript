@@ -21,7 +21,6 @@
             var nome = document.getElementById('name').value;
             var email = document.getElementById('email').value;
 
-            // Expressão regular para validar o email
             var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
             if (nome === "") {
@@ -29,8 +28,6 @@
             } else if (!email.match(emailPattern)) {
                 alert("Por favor, insira um endereço de email válido. ex: nome@dominio.com");
             } else {
-                // Se os campos são válidos, você pode enviar os dados aqui
-                // Exemplo: enviarDados(nome, email);
                 alert("Dados válidos. Nome: " + nome + ", Email: " + email);
             }
         }

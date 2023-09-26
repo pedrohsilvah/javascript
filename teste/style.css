@@ -2,11 +2,26 @@ h1 {
     text-align: center;
 }
 
-form {
-    margin: 0 auto;
-    width: 50%;
+input{
+    border: 1px solid rgba(0, 0, 0, 0.514);
 }
 
-label {
-    display: block;
+form {
+    background-color: rgba(255, 255, 255, 0.288);
+    margin: 0 auto;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+button {
+    border: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s; 
 }
