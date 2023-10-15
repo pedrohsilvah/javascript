@@ -41,8 +41,39 @@
 // }
 
 
-let valor = 10
-let frase = valor < 5 ? 'SIM' : 'NÃO'
-console.log(frase)
+// let valor = 2
+// let resultado = valor < 10 ? "o numero é menor que dez" : "o numero é maior que dez"
+// console.log(resultado)
+ 
 
+// let avaliacao = 50
+// switch (avaliacao) {
+//     case 1:
+//         console.log("Resultado mau")
+//         break
+//     case 2:
+//         console.log("Resultado insuficiente")
+//         break
+//     case 3: 
+//         console.log("Resultado positivo")
+//         break
+//     case 4: 
+//         console.log("Resultado bom")
+//         break
+//     case 5: 
+//         console.log("Resultado exelente")
+//         break
+//     default:
+//         console.log("Avaliação inválida")
+//         break
+// }
+
+let valor = 10 
+switch (valor) {
+    case 10:
+        console.log('Valor igual a 10')
+        break
+    case true:
+        console.log('Valor verdadeiro')
+}
  
