@@ -68,12 +68,34 @@
 //         break
 // }
 
-let valor = 10 
-switch (valor) {
-    case 10:
-        console.log('Valor igual a 10')
-        break
-    case true:
-        console.log('Valor verdadeiro')
-}
+// let valor = 10 
+// switch (valor) {
+//     case 10:
+//         console.log('Valor igual a 10')
+//         break
+//     case true:
+//         console.log('Valor verdadeiro')
+// }
  
+
+// let idade = 15
+// switch(idade) {
+//     case 15:
+//         console.log("Não está apto para dirigir")
+//         break;
+//     case 17: 
+//         console.log("Ainda não está apto a dirigir, porém após um ano já vai está apto")
+//         break; // parar
+//     case 18: 
+//         console.log("Parabéns você já está apto para dirigir")
+//         break;
+//     default: 
+//         console.log("Número inválido")
+// }
+
+let nomes = ["joão", "ana", "carlos"] // array
+console.log(nomes[2])
+console.table(nomes) //tabela com os elementos do array
+
+nomes[1] = "maria" // alterando o elemento de um array
+console.table(nomes) // exibir tabela de array com alteração feita 
