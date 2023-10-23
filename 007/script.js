@@ -93,9 +93,31 @@
 //         console.log("Número inválido")
 // }
 
-let nomes = ["joão", "ana", "carlos"] // array
-console.log(nomes[2])
-console.table(nomes) //tabela com os elementos do array
+// let nomes = ["joão", "ana", "carlos"] // array
+// console.log(nomes[2])
+// console.table(nomes) //tabela com os elementos do array
 
-nomes[1] = "maria" // alterando o elemento de um array
-console.table(nomes) // exibir tabela de array com alteração feita 
+// nomes[1] = "maria" // alterando o elemento de um array
+// console.table(nomes) // exibir tabela de array com alteração feita 
+
+// console.log(nomes.length)
+
+// console.table(nomes)
+// let outros_nomes = ["joaquim", "carla", "maunel"]
+// nomes = nomes.concat(outros_nomes)
+// console.table(nomes)
+
+// let todos_os_nomes = nomes.join("--")
+// console.log(todos_os_nomes)
+
+// let nomes = ["joao", "ana", "carlos", "xavier", "catarina", "fernanda"]
+
+// nomes.sort()
+// nomes.reverse()
+// console.table(nomes)
+
+let valores = [1, 30, 20, 200, 50, 56, 45]
+valores.sort()
+console.table(valores)
+valores.reverse()
+console.table(valores)
