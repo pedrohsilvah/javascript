@@ -128,3 +128,10 @@
 //     valor++
 // }
 
+// for(let valor = 0; valor < 5; valor++){
+//     console.log(valor)
+// }
+
+ let nomes = ['joao', 'ana', 'carlos']
+nomes.forEach((n) => console.log(n))
+
