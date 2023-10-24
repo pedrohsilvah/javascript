@@ -116,8 +116,15 @@
 // nomes.reverse()
 // console.table(nomes)
 
-let valores = [1, 30, 20, 200, 50, 56, 45]
-valores.sort()
-console.table(valores)
-valores.reverse()
-console.table(valores)
+// let valores = [1, 30, 20, 200, 50, 56, 45]
+// valores.sort()
+// console.table(valores)
+// valores.reverse()
+// console.table(valores)
+
+// let valor = 0
+// while(valor <=   10){
+//     console.log(valor)
+//     valor++
+// }
+
