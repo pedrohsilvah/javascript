@@ -132,6 +132,32 @@
 //     console.log(valor)
 // }
 
- let nomes = ['joao', 'ana', 'carlos']
-nomes.forEach((n) => console.log(n))
+//  let nomes = ['joao', 'ana', 'carlos']
+// nomes.forEach((n) => console.log(n))
 
+// function escrever(){
+//     console.log('Aqui está a frase da função.')
+// }
+
+// escrever()
+
+// function escrever(mensagem){
+//     console.log(mensagem)
+// }
+
+// escrever('olá mundo')
+// escrever('as funções são fáceis de criar')
+
+// function adicionar(a, b){
+//     return a + b
+// }
+
+// let resultado = adicionar(100, 200)
+// console.log('Resultado: ' + resultado)
+
+function saudacao(mensagem = 'Bom dia'){
+    console.log(mensagem)
+}
+
+saudacao()
+saudacao('boa noite')
