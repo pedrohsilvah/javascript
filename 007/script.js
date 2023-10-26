@@ -155,9 +155,55 @@
 // let resultado = adicionar(100, 200)
 // console.log('Resultado: ' + resultado)
 
-function saudacao(mensagem = 'Bom dia'){
-    console.log(mensagem)
+// function saudacao(mensagem = 'Bom dia'){
+//     console.log(mensagem)
+// }
+
+// saudacao()
+// saudacao('boa noite')
+
+// function escrever1(){
+//     console.log("Olá mundo1")
+// }
+
+// let escrever2 = function(){
+//     console.log("Olá mundo2")
+// }
+
+// escrever1()
+// escrever2()
+
+// let funcao = function(){
+//     console.log("Texto da Função")
+// }
+
+// funcao()
+
+// let funcao1 = function(){
+//     console.log("funcao 1")
+// }
+
+// let funcao2 = () => {
+//     console.log("funcao 2")
+// }
+
+// funcao1()
+// funcao2()
+
+// let funcao = (a,b) => {
+//     return a +b
+// }
+
+// console.log(funcao(10,20))
+
+// let escrever = (a,b) => a * b
+// console.log(escrever(5,5))
+
+let valor = 10
+function escrever(){
+    console.log("função: " + valor)
 }
 
-saudacao()
-saudacao('boa noite')
+escrever()
+console.log(valor)
+
