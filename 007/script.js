@@ -200,7 +200,7 @@
 // console.log(escrever(5,5))
 
 let valor = 10
-function escrever(){
+function escrever(valor){
     console.log("função: " + valor)
 }
 
