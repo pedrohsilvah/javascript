@@ -199,11 +199,41 @@
 // let escrever = (a,b) => a * b
 // console.log(escrever(5,5))
 
-let valor = 10
-function escrever(valor){
-    console.log("função: " + valor)
+// let valor = 10
+// function escrever(valor){
+//     console.log("função: " + valor)
+// }
+
+// escrever()
+// console.log(valor)
+
+let pessoa = {
+
+    //propriedades
+    nome: "João",
+    apelido: "Ribeiro",
+    idade: 48,
+    genero: "Masculino",
+
+    //métodos
+    apresentar_nome: function() {
+        return this.nome + " " + this.apelido
+    },
+
+    apresentar_idade: function() {
+        return this.idade + " anos de idade"
+    },
+
+    //array
+    hobbies: [
+        'Programação',
+        'Cinema',
+        'Música'
+    ]
 }
 
-escrever()
-console.log(valor)
-
+console.log(pessoa.nome)
+console.log(pessoa['genero'])
+console.log(pessoa.apresentar_nome())
+console.log(pessoa.apresentar_idade())
+console.table(pessoa.hobbies)
