@@ -207,33 +207,33 @@
 // escrever()
 // console.log(valor)
 
-let pessoa = {
+// let pessoa = {
 
-    //propriedades
-    nome: "João",
-    apelido: "Ribeiro",
-    idade: 48,
-    genero: "Masculino",
+//     //propriedades
+//     nome: "João",
+//     apelido: "Ribeiro",
+//     idade: 48,
+//     genero: "Masculino",
 
-    //métodos
-    apresentar_nome: function() {
-        return this.nome + " " + this.apelido
-    },
+//     //métodos
+//     apresentar_nome: function() {
+//         return this.nome + " " + this.apelido
+//     },
 
-    apresentar_idade: function() {
-        return this.idade + " anos de idade"
-    },
+//     apresentar_idade: function() {
+//         return this.idade + " anos de idade"
+//     },
 
-    //array
-    hobbies: [
-        'Programação',
-        'Cinema',
-        'Música'
-    ]
-}
+//     //array
+//     hobbies: [
+//         'Programação',
+//         'Cinema',
+//         'Música'
+//     ]
+// }
 
-console.log(pessoa.nome)
-console.log(pessoa['genero'])
-console.log(pessoa.apresentar_nome())
-console.log(pessoa.apresentar_idade())
-console.table(pessoa.hobbies)
+// console.log(pessoa.nome)
+// console.log(pessoa['genero'])
+// console.log(pessoa.apresentar_nome())
+// console.log(pessoa.apresentar_idade())
+// console.table(pessoa.hobbies)
