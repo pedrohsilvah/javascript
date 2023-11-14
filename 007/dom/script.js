@@ -1,7 +1,11 @@
-let elemento = document.documentElement;
+// let elemento = document.documentElement;
 
-elemento = document.head
-console.log(elemento)
+// elemento = document.head
+// console.log(elemento)
 
 // console.log(elemento)
 // console.log(typeof(elemento))
+
+let id = document.getElementById('titulo')
+
+console.log(id.innerHTML)
