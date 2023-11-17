@@ -6,6 +6,12 @@
 // console.log(elemento)
 // console.log(typeof(elemento))
 
-let id = document.getElementById('titulo')
+// let id = document.getElementById('titulo')
 
-console.log(id.innerHTML)
+// console.log(id.innerHTML) 
+
+// let e = document.getElementsByTagName("p")
+// e[1].innerText = "Olá mundo!"
+
+let e = document.querySelector(".subtitulo")
+console.log(e)
