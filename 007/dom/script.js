@@ -13,5 +13,7 @@
 // let e = document.getElementsByTagName("p")
 // e[1].innerText = "Olá mundo!"
 
-let e = document.querySelector(".subtitulo")
-console.log(e)
+// let e = document.querySelector(".subtitulo")
+// console.log(e)  
+
+document.querySelector("body").style.backgroundColor = "red"
