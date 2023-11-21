@@ -16,4 +16,5 @@
 // let e = document.querySelector(".subtitulo")
 // console.log(e)  
 
-document.querySelector("body").style.backgroundColor = "red"
+// document.querySelector("body").style.backgroundColor = "red"
+
