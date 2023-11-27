@@ -30,7 +30,11 @@
 
 // div.appendChild(novo_elemento)
 
-let div1 = document.querySelector('#elemento_1')
-let novo_paragrafo = document.createElement('p').innerText = 'olá mundo!!'
+// let div1 = document.querySelector('#elemento_1')
+// let novo_paragrafo = document.createElement('p').innerText = 'olá mundo!!'
 
-div1.prepend(novo_paragrafo)
+// div1.prepend(novo_paragrafo)
+
+function funcao(){
+    console.log('clique2')
+}
