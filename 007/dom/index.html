@@ -8,12 +8,14 @@
 </head>
 
 <body>
-    <h1 
-        onclick="alert('titulo')"
-        oncontextmenu="alert('botão direto')"
-    >Texto do título desta página</h1>
+    <h1>Texto original</h1>
 
-    <button onclick="funcao()">Alterar Texto</button>
+    <button
+        onclick="alterar_texto()" 
+        onclick="console.log('teste')"   
+    >Alterar 1</button>
+
+    <button id="botao">Alterar 2</button>
 
     <script src="script.js"></script>
 </body>
