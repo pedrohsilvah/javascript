@@ -44,18 +44,36 @@
 //     console.log(e.target)
 // }
 
-function alterar_texto(){
-    document.querySelector("h1").textContent = "Novo Texto"
-}
 
-let botao = document.querySelector('#botao')
-botao.onclick = funcao1
-botao.onclick = funcao2
+// const botao = document.querySelector("button")
+// const caixa = document.querySelector(".caixa") 
 
-function funcao1(){
-    console.log('clique')
-}
+// botao.addEventListener('click', function executar() {
+//     console.log("clique")
+//     caixa.style.backgroundColor = 'aquamarine'
+//     botao.removeEventListener('click', executar)
+// })
 
-function funcao2(){
-    document.querySelector('h1').textContent = "Novo texto2"
-}
+let h1 = querySelector("h1")
+let section = document.querySelector("section")
+let article = document.querySelector("article")
+let div = document.querySelector("div")
+
+section.addEventListener('click', function executar1(event){
+    h1.innerText = "Olá section"
+
+    event.stopPropagation()
+})
+
+article.addEventListener('click', function executar2(event){
+    h1.innerText = "Olá section"
+
+    event.stopPropagation()
+})
+
+div.addEventListener('click', function executar3(event){
+    h1.innerText = "Olá section"
+
+    event.stopPropagation()
+})
+
