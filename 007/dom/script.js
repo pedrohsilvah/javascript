@@ -54,26 +54,23 @@
 //     botao.removeEventListener('click', executar)
 // })
 
-let h1 = querySelector("h1")
+
 let section = document.querySelector("section")
 let article = document.querySelector("article")
 let div = document.querySelector("div")
 
-section.addEventListener('click', function executar1(event){
-    h1.innerText = "Olá section"
-
+section.addEventListener('click', (event) => {
     event.stopPropagation()
+    console.log('section')
 })
 
-article.addEventListener('click', function executar2(event){
-    h1.innerText = "Olá section"
 
+article.addEventListener('click', (event) => {
     event.stopPropagation()
+    console.log('article')
 })
 
-div.addEventListener('click', function executar3(event){
-    h1.innerText = "Olá section"
-
+div.addEventListener('click', (event) => {
     event.stopPropagation()
+    console.log('div')
 })
-
