@@ -55,22 +55,50 @@
 // })
 
 
-let section = document.querySelector("section")
-let article = document.querySelector("article")
-let div = document.querySelector("div")
+// let section = document.querySelector("section")
+// let article = document.querySelector("article")
+// let div = document.querySelector("div")
 
-section.addEventListener('click', (event) => {
-    event.stopPropagation()
-    console.log('section')
+// section.addEventListener('click', (event) => {
+//     event.stopPropagation()
+//     console.log('section')
+// })
+
+
+// article.addEventListener('click', (event) => {
+//     event.stopPropagation()
+//     console.log('article')
+// })
+
+// div.addEventListener('click', (event) => {
+//     event.stopPropagation()
+//     console.log('div')
+// })
+
+
+document.querySelector('#btn_vermelho').addEventListener('click', () => {
+    for(let i = 0; i <= 200; i += 5){
+        let tmp = document.createElement('div');
+        tmp.classList.add('caixa');
+        tmp.style.backgroundColor = `rgb(${i}, 0, 0)`;
+        document.body.appendChild(tmp);
+    }
+});
+
+document.querySelector('#btn_verde').addEventListener('click', () => {
+    for(let i=0; i <= 250; i+=10){
+        let tmp = document.createElement('div')
+        tmp.classList.add('caixa')
+        tmp.style.backgroundColor = `rgb(${i},0,0)`
+        document.body.appendChild(tmp)
+    }
 })
 
-
-article.addEventListener('click', (event) => {
-    event.stopPropagation()
-    console.log('article')
-})
-
-div.addEventListener('click', (event) => {
-    event.stopPropagation()
-    console.log('div')
+document.querySelector('#btn_azul').addEventListener('click', () => {
+    for(let i=0; i <= 250; i+=10){
+        let tmp = document.createElement('div')
+        tmp.classList.add('caixa')
+        tmp.style.backgroundColor = `rgb(${i},0,0)`
+        document.body.appendChild(tmp)
+    }
 })
