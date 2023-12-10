@@ -76,29 +76,33 @@
 // })
 
 
-document.querySelector('#btn_vermelho').addEventListener('click', () => {
-    for(let i = 0; i <= 200; i += 5){
-        let tmp = document.createElement('div');
-        tmp.classList.add('caixa');
-        tmp.style.backgroundColor = `rgb(${i}, 0, 0)`;
-        document.body.appendChild(tmp);
-    }
-});
+// document.querySelector('#btn_vermelho').addEventListener('click', () => {
+//     for(let i = 0; i <= 200; i += 5){
+//         let tmp = document.createElement('div');
+//         tmp.classList.add('caixa');
+//         tmp.style.backgroundColor = `rgb(${i}, 0, 0)`;
+//         document.body.appendChild(tmp);
+//     }
+// });
 
-document.querySelector('#btn_verde').addEventListener('click', () => {
-    for(let i=0; i <= 250; i+=10){
-        let tmp = document.createElement('div')
-        tmp.classList.add('caixa')
-        tmp.style.backgroundColor = `rgb(${i},0,0)`
-        document.body.appendChild(tmp)
-    }
-})
+// document.querySelector('#btn_verde').addEventListener('click', () => {
+//     for(let i=0; i <= 250; i+=10){
+//         let tmp = document.createElement('div')
+//         tmp.classList.add('caixa')
+//         tmp.style.backgroundColor = `rgb(${i},0,0)`
+//         document.body.appendChild(tmp)
+//     }
+// })
 
-document.querySelector('#btn_azul').addEventListener('click', () => {
-    for(let i=0; i <= 250; i+=10){
-        let tmp = document.createElement('div')
-        tmp.classList.add('caixa')
-        tmp.style.backgroundColor = `rgb(${i},0,0)`
-        document.body.appendChild(tmp)
-    }
+// document.querySelector('#btn_azul').addEventListener('click', () => {
+//     for(let i=0; i <= 250; i+=10){
+//         let tmp = document.createElement('div')
+//         tmp.classList.add('caixa')
+//         tmp.style.backgroundColor = `rgb(${i},0,0)`
+//         document.body.appendChild(tmp)
+//     }
+// })
+
+document.querySelector('a').addEventListener('click', (e) => {
+    e.preventDefault()
 })
