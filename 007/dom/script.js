@@ -107,24 +107,28 @@
 //     e.preventDefault()
 // })
 
-document.formulario_login.addEventListener('submit', (event) => {
-    let usuario = event.target.usuario.value
-    let senha = event.target.usuario.value
-    let submit = true
+// document.formulario_login.addEventListener('submit', (event) => {
+//     let usuario = event.target.usuario.value
+//     let senha = event.target.usuario.value
+//     let submit = true
 
-    if(usuario === "") {
-        submit = false
+//     if(usuario === "") {
+//         submit = false
 
-        alert("Você tem que adicionar um usuario para avançar")
-    }
+//         alert("Você tem que adicionar um usuario para avançar")
+//     }
 
-    if(senha === "") {
-        submit = false
+//     if(senha === "") {
+//         submit = false
 
-        alert("Você tem que adicionar uma senha para avançar")
-    }
+//         alert("Você tem que adicionar uma senha para avançar")
+//     }
 
-    if(!submit){
-        event.preventDefault()
-    }
+//     if(!submit){
+//         event.preventDefault()
+//     }
+// })
+
+document.querySelector('button').addEventListener('click', () => {
+    let h1 = document.createElement('h1').innerText = "texto do título alterado"
 })
