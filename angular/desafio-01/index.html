@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAL DE NOTICÍAS GALACTICA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/components/cardNews.js" defer></script>
+    <script src="src/components/tituloDinamico.js" defer></script>
 </head>
 <body>
     <div class="container">
 
         <div class="card">
             <div class="card_left">
-                <span>Pedro Henrique</span>
+                <span>By Pedro Henrique</span>
                 <h1>Darth Vader Contrata Devs</h1>
-                <p>98</p>
+                <p>Darth Vader a procura de desenvolvedores que sabem trabalhar com componentes</p>
             </div>
             <div class="card_right">
-
+                <img src="https://www.mexidodeideias.com.br/wp-content/uploads/2013/04/Coffee-Vader-Cafe-do-lado-negro-da-forca.jpg" alt="Darth Vader">
             </div>
 
         </div>
 
     </div>
+    
+    <card-news
+        autor="Pedro"
+        title="Darth Vader Contrata"
+        content="Darth Vader a procura de desenvolvedores que sabem trabalhar com componentes"
+    ></card-news>
+
 </body>
 </html>
