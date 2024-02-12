@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./vue.js"></script>
     <title>Vue.js</title>
 </head>
+
 <body>
-    Teste   
+    Teste
 
     <div id="app">
-        {{ mensagem }}
+        {{ mensagem }} <br>
+        Idade: {{ idade }}
     </div>
 
     <script>
 
-        options = {
-            el:'#app',
-            data: {
-                mensagem: "Hello word"
-            }
-        }
-
         const vm = new Vue(
             options = {
-            el:'#app',
-            data: {
-                mensagem: "Hello word"
-            }
-        })
+                el: '#app',
+                data: {
+                    mensagem: "Hello word",
+                    hobbies: [
+                        'dormir',
+                        'jogar'
+                    ],
+                    perfil: {
+                        nome: 'pedro',
+                        idade: 18
+                    }
+                }
+            })
     </script>
 </body>
+
 </html>
