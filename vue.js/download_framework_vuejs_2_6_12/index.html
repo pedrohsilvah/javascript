@@ -6,34 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./vue.js"></script>
     <title>Vue.js</title>
+    <style>
+        .vermelho {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    Teste
 
     <div id="app">
-        {{ mensagem }} <br>
-        nome: {{ perfil.nome }} <br>
-        Idade: {{ perfil.idade }}
+        <a v-bind:href="site" target="_blank">Site</a>
+        <p v-bind:class="cor">Entendendo a diretiva V-bind</p>
+        <input type="text">
+        <input type="checkbox">
     </div>
 
     <script>
 
-        const vm = new Vue(
-            options = {
-                el: '#app',
-                data: {
-                    mensagem: "Hello word",
-                    hobbies: [
-                        'dormir',
-                        'jogar'
-                    ],
-                    perfil: {
-                        nome: 'Pedro',
-                        idade: 18
-                    }
-                }
-            })
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                site: 'https://www.google.com/',
+                cor: 'vermelho'
+            },
+            methods: {}
+
+        })
     </script>
 </body>
 
