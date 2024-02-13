@@ -20,17 +20,19 @@
         <p v-bind:class="cor">Entendendo a diretiva V-bind</p>
         <input type="text">
         <input type="checkbox">
+        <button @click="mensagemAlerta('texto alterado')">Botão</button>
     </div>
 
     <script>
 
         const vm = new Vue({
             el: '#app',
-            data: {
-                site: 'https://www.google.com/',
-                cor: 'vermelho'
-            },
-            methods: {}
+            data: {},
+            methods: {
+                mensagemAlerta(t) {
+                    alert(t)
+                }
+            }
 
         })
     </script>
