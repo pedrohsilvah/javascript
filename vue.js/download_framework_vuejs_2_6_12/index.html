@@ -7,8 +7,35 @@
     <script src="./vue.js"></script>
     <title>Vue.js</title>
     <style>
+        .verde {
+            background-color: green;
+        }
+
+        .branco {
+            background-color: white;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
         .vermelho {
-            color: red;
+            background-color: red;
+        }
+
+        .borda {
+            border: 1px solid;
+        }
+
+        .div-principal {
+            width: 200px;
+            height: 200px;
+        }
+
+        .div-comum {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -16,24 +43,34 @@
 <body>
 
     <div id="app">
-        <a v-bind:href="site" target="_blank">Site</a>
-        <p v-bind:class="cor">Entendendo a diretiva V-bind</p>
-        <input type="text">
-        <input type="checkbox">
-        <button @click="mensagemAlerta('texto alterado')">Botão</button>
+        <div class="borda div-principal" :class="cor">
+            Cor: {{ cor }}
+        </div>
+        <hr>
+        <div @click="mudarCor('verde')" class="borda div-comum"></div>
+        <div 
+            class="borda div-comum" 
+            @mouseover="mudarCor('azul')" 
+            @mouseout="mudarCor('vermelho')">
+        </div>
+        <div class="borda div-comum" @mousemove="coordenadas($event)"></div>
     </div>
 
     <script>
 
         const vm = new Vue({
             el: '#app',
-            data: {},
+            data: {
+                cor: 'branco'
+            },
             methods: {
-                mensagemAlerta(t) {
-                    alert(t)
+                mudarCor(c) {
+                    this.cor = c
+                },
+                coordenadas(e) {
+                    console.log(e)
                 }
             }
-
         })
     </script>
 </body>
