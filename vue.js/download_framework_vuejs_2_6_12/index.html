@@ -7,60 +7,31 @@
     <script src="./vue.js"></script>
     <title>Vue.js</title>
     <style>
-        .verde {
-            background-color: green;
-        }
-
-        .branco {
-            background-color: white;
-        }
-
-        .azul {
-            background-color: blue;
-        }
-
-        .vermelho {
-            background-color: red;
-        }
-
-        .borda {
-            border: 1px solid;
-        }
-
-        .div-principal {
-            width: 200px;
-            height: 200px;
-        }
-
-        .div-comum {
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-        }
     </style>
 </head>
 
 <body>
 
     <div id="app">
-        <a href="https://jorgesantana.net.br" target="_blank" v-on:click="prevenirComportamentoPadrao()">
-            Link
-        </a>
+        <input type="text" id="inputTexto">
         <br>
-        Mensagem: {{ msg }}
+        <select id="opcoes">
+            <option value="A">Opção 1</option>
+            <option value="B">Opção 2</option>
+            <option value="C">Opção 3</option>
+        </select>
+        <button @click="selecionarElementoFilho()">Botão</button>
     </div>
 
     <script>
 
         const vm = new Vue({
             el: '#app',
-            data: {
-                msg: ''
-            },
+            data: {},
             methods: {
-                prevenirComportamentoPadrao() {
-                    event.preventDefault()
-                    this.msg = 'Comportamento padrão ativado'
+                selecionarElementoFilho() {
+                    //console.log(inputTexto)
+                    console.log(opcoes)
                 }
             }
         })
