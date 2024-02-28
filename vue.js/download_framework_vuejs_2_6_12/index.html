@@ -13,11 +13,11 @@
 <body>
 
     <div id="app">
-        <button @click="exibirSaldo = !exibirSaldo">
-            <span v-if="!exibirSaldo">Exibir Saldo</span>
-            <span v-if="exibirSaldo">Ocutar Saldo</span>
-        </button>
-        <p>Saldo: <span v-if="exibirSaldo">R$ {{ saldo }} </span></p>
+        <p @mouseover="exibirTextoAjuda = true" @mouseout="exibirTextoAjuda = false">Exemplo tooltip</p>
+        <div v-show="exibirTextoAjuda">
+            <h3>Título texto ajuda</h3>
+            <p>Conteúdo texto ajuda</p>
+        </div>
     </div>
 
     <script>
@@ -25,8 +25,7 @@
         const vm = new Vue({
             el: '#app',
             data: {
-                saldo: 4570.17,
-                exibirSaldo: false
+                exibirTextoAjuda: false
             },
             methods: {}
         })
